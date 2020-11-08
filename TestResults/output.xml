@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.7.9 on win32)" generated="20201108 21:15:26.170" rpa="false">
+<suite id="s1" name="PilotProj" source="D:\drive\work\project\practice\robot\theautomatedtester-ui">
+<suite id="s1-s1" name="Suites" source="D:\drive\work\project\practice\robot\theautomatedtester-ui\Suites">
+<suite id="s1-s1-s1" name="landingPage" source="D:\drive\work\project\practice\robot\theautomatedtester-ui\Suites\landingPage.robot">
+<test id="s1-s1-s1-t1" name="Launch_app">
+<kw name="Launch UAT Browser" library="Keywords">
+<arguments>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${in_browser}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:26.414" level="INFO">ff</msg>
+<status status="PASS" starttime="20201108 21:15:26.414" endtime="20201108 21:15:26.414"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Wait_timeout}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:26.415" level="INFO">30</msg>
+<status status="PASS" starttime="20201108 21:15:26.414" endtime="20201108 21:15:26.415"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${in_browser}' == 'gc'</arg>
+<arg>Open Browser</arg>
+<arg>${Protocol}${Environment}</arg>
+<arg>${Browser}</arg>
+<arg>options=add_argument("incognito"); add_experimental_option("excludeSwitches",['enable-automation'])</arg>
+</arguments>
+<status status="PASS" starttime="20201108 21:15:26.415" endtime="20201108 21:15:26.416"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${in_browser}' == 'ff'</arg>
+<arg>Open Browser</arg>
+<arg>${Protocol}${Environment}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Protocol}${Environment}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:26.416" level="INFO">Opening browser 'ff' to base url 'http://book.theautomatedtester.co.uk'.</msg>
+<msg timestamp="20201108 21:15:26.417" level="INFO">Firefox driver log is always forced to to: D:\drive\work\project\practice\robot\theautomatedtester-ui\TestResults\geckodriver-5.log</msg>
+<status status="PASS" starttime="20201108 21:15:26.416" endtime="20201108 21:15:34.087"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:26.416" endtime="20201108 21:15:34.087"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:26.413" endtime="20201108 21:15:34.088"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201108 21:15:34.089" endtime="20201108 21:15:34.102"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${HomePage_verificaiton}</arg>
+<arg>${Wait_timeout}</arg>
+</arguments>
+<status status="PASS" starttime="20201108 21:15:34.103" endtime="20201108 21:15:34.118"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>Chapter1</arg>
+</arguments>
+<msg timestamp="20201108 21:15:34.132" level="INFO">Current page contains link 'Chapter1'.</msg>
+<status status="PASS" starttime="20201108 21:15:34.119" endtime="20201108 21:15:34.132"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>Chapter2</arg>
+</arguments>
+<msg timestamp="20201108 21:15:34.214" level="INFO">Current page contains link 'Chapter2'.</msg>
+<status status="PASS" starttime="20201108 21:15:34.133" endtime="20201108 21:15:34.215"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>Chapter3</arg>
+</arguments>
+<msg timestamp="20201108 21:15:34.236" level="INFO">Current page contains link 'Chapter3'.</msg>
+<status status="PASS" starttime="20201108 21:15:34.216" endtime="20201108 21:15:34.236"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>Chapter4</arg>
+</arguments>
+<msg timestamp="20201108 21:15:34.253" level="INFO">Current page contains link 'Chapter4'.</msg>
+<status status="PASS" starttime="20201108 21:15:34.237" endtime="20201108 21:15:34.253"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>Chapter8</arg>
+</arguments>
+<msg timestamp="20201108 21:15:34.270" level="INFO">Current page contains link 'Chapter8'.</msg>
+<status status="PASS" starttime="20201108 21:15:34.254" endtime="20201108 21:15:34.270"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:26.413" endtime="20201108 21:15:34.272" critical="yes"></status>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20201108 21:15:34.276" endtime="20201108 21:15:37.758"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:26.205" endtime="20201108 21:15:37.758"></status>
+</suite>
+<suite id="s1-s1-s2" name="Navigation" source="D:\drive\work\project\practice\robot\theautomatedtester-ui\Suites\navigation">
+<suite id="s1-s1-s2-s1" name="navigationByUrl" source="D:\drive\work\project\practice\robot\theautomatedtester-ui\Suites\navigation\navigationByUrl.robot">
+<kw name="Launch UAT Browser" library="Keywords" type="setup">
+<arguments>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${in_browser}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:37.776" level="INFO">ff</msg>
+<status status="PASS" starttime="20201108 21:15:37.775" endtime="20201108 21:15:37.776"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Wait_timeout}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:37.776" level="INFO">30</msg>
+<status status="PASS" starttime="20201108 21:15:37.776" endtime="20201108 21:15:37.776"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${in_browser}' == 'gc'</arg>
+<arg>Open Browser</arg>
+<arg>${Protocol}${Environment}</arg>
+<arg>${Browser}</arg>
+<arg>options=add_argument("incognito"); add_experimental_option("excludeSwitches",['enable-automation'])</arg>
+</arguments>
+<status status="PASS" starttime="20201108 21:15:37.777" endtime="20201108 21:15:37.777"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${in_browser}' == 'ff'</arg>
+<arg>Open Browser</arg>
+<arg>${Protocol}${Environment}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Protocol}${Environment}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:37.778" level="INFO">Opening browser 'ff' to base url 'http://book.theautomatedtester.co.uk'.</msg>
+<msg timestamp="20201108 21:15:37.780" level="INFO">Firefox driver log is always forced to to: D:\drive\work\project\practice\robot\theautomatedtester-ui\TestResults\geckodriver-6.log</msg>
+<status status="PASS" starttime="20201108 21:15:37.778" endtime="20201108 21:15:46.747"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:37.777" endtime="20201108 21:15:46.747"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:37.775" endtime="20201108 21:15:46.748"></status>
+</kw>
+<test id="s1-s1-s2-s1-t1" name="Navigate to Chapter1">
+<kw name="NavigateToChapter1" library="Keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${Protocol}${Environment}/chapter1</arg>
+</arguments>
+<msg timestamp="20201108 21:15:46.751" level="INFO">Opening url 'http://book.theautomatedtester.co.uk/chapter1'</msg>
+<status status="PASS" starttime="20201108 21:15:46.750" endtime="20201108 21:15:47.383"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:46.750" endtime="20201108 21:15:47.383"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${Chapter1_verification}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:47.426" level="INFO">Current page contains text 'installed Selenium IDE'.</msg>
+<status status="PASS" starttime="20201108 21:15:47.384" endtime="20201108 21:15:47.426"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:46.748" endtime="20201108 21:15:47.427" critical="yes"></status>
+</test>
+<test id="s1-s1-s2-s1-t2" name="Navigate to Chapter2">
+<kw name="NavigateToChapter2" library="Keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${Protocol}${Environment}/chapter2</arg>
+</arguments>
+<msg timestamp="20201108 21:15:47.432" level="INFO">Opening url 'http://book.theautomatedtester.co.uk/chapter2'</msg>
+<status status="PASS" starttime="20201108 21:15:47.431" endtime="20201108 21:15:47.954"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:47.431" endtime="20201108 21:15:47.955"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${Chapter2_verification}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:47.985" level="INFO">Current page contains text 'This item div has the id of find'.</msg>
+<status status="PASS" starttime="20201108 21:15:47.956" endtime="20201108 21:15:47.985"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:47.429" endtime="20201108 21:15:47.987" critical="yes"></status>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20201108 21:15:47.990" endtime="20201108 21:15:49.445"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:37.765" endtime="20201108 21:15:49.445"></status>
+</suite>
+<suite id="s1-s1-s2-s2" name="navigationWorkflow" source="D:\drive\work\project\practice\robot\theautomatedtester-ui\Suites\navigation\navigationWorkflow.robot">
+<test id="s1-s1-s2-s2-t1" name="Navigate to Chapter1">
+<kw name="Launch UAT Browser" library="Keywords" type="setup">
+<arguments>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${in_browser}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:49.461" level="INFO">ff</msg>
+<status status="PASS" starttime="20201108 21:15:49.460" endtime="20201108 21:15:49.461"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Wait_timeout}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:49.461" level="INFO">30</msg>
+<status status="PASS" starttime="20201108 21:15:49.461" endtime="20201108 21:15:49.461"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${in_browser}' == 'gc'</arg>
+<arg>Open Browser</arg>
+<arg>${Protocol}${Environment}</arg>
+<arg>${Browser}</arg>
+<arg>options=add_argument("incognito"); add_experimental_option("excludeSwitches",['enable-automation'])</arg>
+</arguments>
+<status status="PASS" starttime="20201108 21:15:49.461" endtime="20201108 21:15:49.462"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${in_browser}' == 'ff'</arg>
+<arg>Open Browser</arg>
+<arg>${Protocol}${Environment}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Protocol}${Environment}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:49.463" level="INFO">Opening browser 'ff' to base url 'http://book.theautomatedtester.co.uk'.</msg>
+<msg timestamp="20201108 21:15:49.464" level="INFO">Firefox driver log is always forced to to: D:\drive\work\project\practice\robot\theautomatedtester-ui\TestResults\geckodriver-7.log</msg>
+<status status="PASS" starttime="20201108 21:15:49.462" endtime="20201108 21:15:56.061"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:49.462" endtime="20201108 21:15:56.061"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:49.460" endtime="20201108 21:15:56.062"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_Chapter1}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:56.063" level="INFO">Clicking element '//a[contains(., "Chapter1")]'.</msg>
+<status status="PASS" starttime="20201108 21:15:56.063" endtime="20201108 21:15:56.550"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${Chapter1_verification}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:56.569" level="INFO">Current page contains text 'installed Selenium IDE'.</msg>
+<status status="PASS" starttime="20201108 21:15:56.550" endtime="20201108 21:15:56.569"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20201108 21:15:56.571" endtime="20201108 21:15:57.904"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:49.459" endtime="20201108 21:15:57.905" critical="yes"></status>
+</test>
+<test id="s1-s1-s2-s2-t2" name="Navigate to Chapter2">
+<kw name="Launch UAT Browser" library="Keywords" type="setup">
+<arguments>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${in_browser}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:57.909" level="INFO">ff</msg>
+<status status="PASS" starttime="20201108 21:15:57.908" endtime="20201108 21:15:57.909"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Wait_timeout}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:57.909" level="INFO">30</msg>
+<status status="PASS" starttime="20201108 21:15:57.909" endtime="20201108 21:15:57.909"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${in_browser}' == 'gc'</arg>
+<arg>Open Browser</arg>
+<arg>${Protocol}${Environment}</arg>
+<arg>${Browser}</arg>
+<arg>options=add_argument("incognito"); add_experimental_option("excludeSwitches",['enable-automation'])</arg>
+</arguments>
+<status status="PASS" starttime="20201108 21:15:57.909" endtime="20201108 21:15:57.910"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${in_browser}' == 'ff'</arg>
+<arg>Open Browser</arg>
+<arg>${Protocol}${Environment}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Protocol}${Environment}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20201108 21:15:57.911" level="INFO">Opening browser 'ff' to base url 'http://book.theautomatedtester.co.uk'.</msg>
+<msg timestamp="20201108 21:15:57.912" level="INFO">Firefox driver log is always forced to to: D:\drive\work\project\practice\robot\theautomatedtester-ui\TestResults\geckodriver-8.log</msg>
+<status status="PASS" starttime="20201108 21:15:57.911" endtime="20201108 21:16:03.844"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:57.910" endtime="20201108 21:16:03.844"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:57.908" endtime="20201108 21:16:03.844"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_Chapter2}</arg>
+</arguments>
+<msg timestamp="20201108 21:16:03.851" level="INFO">Clicking element '//a[contains(., "Chapter2")]'.</msg>
+<status status="PASS" starttime="20201108 21:16:03.850" endtime="20201108 21:16:04.343"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${Chapter2_verification}</arg>
+</arguments>
+<msg timestamp="20201108 21:16:04.361" level="INFO">Current page contains text 'This item div has the id of find'.</msg>
+<status status="PASS" starttime="20201108 21:16:04.343" endtime="20201108 21:16:04.361"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20201108 21:16:04.363" endtime="20201108 21:16:05.638"></status>
+</kw>
+<status status="PASS" starttime="20201108 21:15:57.907" endtime="20201108 21:16:05.639" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201108 21:15:49.449" endtime="20201108 21:16:05.641"></status>
+</suite>
+<status status="PASS" starttime="20201108 21:15:37.762" endtime="20201108 21:16:05.646"></status>
+</suite>
+<status status="PASS" starttime="20201108 21:15:26.203" endtime="20201108 21:16:05.650"></status>
+</suite>
+<status status="PASS" starttime="20201108 21:15:26.172" endtime="20201108 21:16:05.655"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="PilotProj">PilotProj</stat>
+<stat pass="5" fail="0" id="s1-s1" name="Suites">PilotProj.Suites</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="landingPage">PilotProj.Suites.landingPage</stat>
+<stat pass="4" fail="0" id="s1-s1-s2" name="Navigation">PilotProj.Suites.Navigation</stat>
+<stat pass="2" fail="0" id="s1-s1-s2-s1" name="navigationByUrl">PilotProj.Suites.Navigation.navigationByUrl</stat>
+<stat pass="2" fail="0" id="s1-s1-s2-s2" name="navigationWorkflow">PilotProj.Suites.Navigation.navigationWorkflow</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

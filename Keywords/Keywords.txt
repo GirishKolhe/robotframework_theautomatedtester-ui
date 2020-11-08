@@ -1,0 +1,15 @@
+*** Settings ***
+
+*** Keywords ***
+NavigateToChapter1
+    Go To    ${Protocol}${Environment}/chapter1
+
+NavigateToChapter2
+    Go To    ${Protocol}${Environment}/chapter2
+
+Launch UAT Browser
+    [Arguments]    ${in_browser}
+    log    ${in_browser}
+    Log    ${Wait_timeout}
+    Run Keyword If    '${in_browser}' == 'gc'    Open Browser    ${Protocol}${Environment}    ${Browser}    options=add_argument("incognito"); add_experimental_option("excludeSwitches",['enable-automation'])
+    Run Keyword If    '${in_browser}' == 'ff'    Open Browser    ${Protocol}${Environment}    ${Browser}

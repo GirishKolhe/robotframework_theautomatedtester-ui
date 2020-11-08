@@ -1,0 +1,7 @@
+*** Settings ***
+Library           SeleniumLibrary
+Library           String
+Resource          ../Keywords/Keywords.txt
+Resource          ../Variables/Common.txt
+Resource          ../Variables/Constants.robot
+Resource          ../Locators/HomePage.txt
