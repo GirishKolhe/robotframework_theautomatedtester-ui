@@ -1,17 +1,17 @@
 # robotframework_theautomatedtester-ui
 
 # Objective
-> Objective of this repo is to provide a very simple automation code base for a web based application using open source framework.
+> Objective of this repo is to provide a very simple automation code base for a web-based application using open source framework.
 
 # Project : theautomatedtester-ui
-> The automation framwork uses python based open source robot framework. It uses best practices of automation. Ready to plug in to continuous test pipeline
+> This automation framework uses python based open source robot framework. It uses automation best practices. Ready to plug in to continuous test pipeline
 
 ## Highlights
 ```
-> Robot framework folder strcture
+> Robot framework folder structure
 > Uses best practices to name few as follows 
-	commandline execution and parameters such as browser is passed from commandline
-	externalization of locators (similar to object repository) and contansts
+	CLI support and ability to over write important parameters such as browser from command line
+	externalization of locators (like object repository) and constants
 	modularization (keywords and test cases)
 ```
 
