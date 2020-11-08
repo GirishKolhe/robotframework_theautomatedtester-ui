@@ -1,0 +1,6 @@
+*** Variables ***
+${xpath_Chapter1}    //a[contains(., "Chapter1")]
+${xpath_Chapter2}    //a[contains(., "Chapter2")]
+${xpath_Chapter3}    //a[contains(., "Chapter3")]
+${xpath_Chapter4}    //a[contains(., "Chapter4")]
+${xpath_Chapter8}    //a[contains(., "Chapter8")]

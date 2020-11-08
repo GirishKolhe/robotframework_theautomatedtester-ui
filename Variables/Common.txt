@@ -1,0 +1,5 @@
+*** Variables ***
+${Browser}        gc
+${Protocol}       http://
+${Environment}    book.theautomatedtester.co.uk    # Ate , Dev ,AteCT1 - book.theautomatedtester.co.uk - automationpractice.com/index.php
+${Wait_timeout}    20
