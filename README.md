@@ -13,6 +13,7 @@
 	CLI support and ability to over write important parameters such as browser from command line
 	externalization of locators (like object repository) and constants
 	modularization (keywords and test cases)
+	rerun failed tests
 ```
 
 ## How to execute
@@ -21,7 +22,9 @@
 - install seleniumlirary (robotframework-seleniumlibrary==4.5.0)
 - clone repository
 - on command promopt, navigate to directoty
-- execute #run-tests.cmd command
+- execute command #run-tests.cmd
+- robot command from the command file creates 'TestResults' automatically. it creates summarized report.html and detailed log.html. It also overwrites existing files if any
+- It has output.xml, that will be helpful for reexecuting failed test cases.
 
 # Further reading
 - [robotframework](https://robotframework.org/)
