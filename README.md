@@ -9,7 +9,7 @@
 ## Highlights
 ```
 > Robot framework folder structure
-> Considers best practices follows (to name few important) 
+> Considers best practices (to name few important) 
 	CLI support and ability to over write important parameters such as browser from command line
 	externalization of locators (like object repository) and constants
 	modularization (keywords and test cases)
